@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
+
+:root {
+  --mainWhite: #eeeeee;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  background-color: var(--mainWhite);
+
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(10rem, 100rem) 1fr;
+  grid-row-gap: 2rem;
+  height: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.home-header {
+  grid-column: 1 / -1;
+  min-height: 40vh;
+  width: 100%;
+
+}
+
+.project-list {
+  grid-column: 2 / 3;
+  height: 100%;
+
+  display: grid;
+  grid-column: 1fr;
+  grid-row-gap: 2rem;
+}
+
+.home-footer {
+  grid-column: 1 / -1;
+  background-color: rgb(97, 97, 97);
+  text-align: center;
+  align-items: center;
+  color: white;
+  height: 5rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: 5rem 1fr;
+  background-color: lightgray;
+
+  &-number {
+    grid-row: 1 / -1;
+    font-size: 4.2rem;
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-tittle {
+    align-self: center;
+    padding-left: 2rem;
+  }
+}
+
+.project-wrapper {
+  position: relative;
+  height: 100rem;
+}
+
+.back-btn {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  align-items: center;
+  color: #333;
+  &:focus,
+  &:active,
+  &:visited {
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  &-icon {
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #51a0fd;
+    margin-right: 1rem;
+  }
+}

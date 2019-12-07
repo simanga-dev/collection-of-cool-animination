@@ -1,0 +1,13 @@
+.project-card {
+  display:  grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-rows: 4rem 1fr;
+
+  &-number {
+    font-size: 4rem;
+  }
+
+  &-tittle {
+    font-size: 3.87rem;
+  }
+}
