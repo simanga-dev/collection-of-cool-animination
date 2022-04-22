@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "fullpage.js": "^3.0.8",
+    "fullpage.js": "^4.0.5",
     "gsap": "^3.0.1",
     "hover-effect": "^1.1.0",
     "node-sass": "^4.13.0",
